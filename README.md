@@ -8,6 +8,19 @@ directly from your website.
 
 This repository contains the core of Mibew Messenger application.
 
+## Development
+
+For testing purposes, this project can built and run using [docker](https://docker.com)
+and [docker-compose](https://docs.docker.com/compose/overview/) by executing the
+following commands
+
+```
+docker-compose build
+docker-compose up
+```
+
+Then navigate to `localhost:8080/index.php` if on Linux, or `192.168.99.100:8080/index.php` if on OSX
+
 ## Server requirements
 
 1. A webserver or web hosting account running on any major Operating System
