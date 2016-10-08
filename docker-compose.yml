@@ -1,0 +1,23 @@
+version: '2'
+services:
+  mibew:
+    build: .
+    image: niteline/mibew
+    links:
+      - db:mysql
+    ports:
+      - 8080:80
+    volumes:
+      - ./configs:/var/www/html/configs
+      # - ./php:/usr/local/etc/php/conf.d
+
+  db:
+    image: mysql
+    user: "1000"
+    environment:
+      MYSQL_ROOT_PASSWORD: mibew
+      MYSQL_DATABASE: mibew
+      MYSQL_USER: mibew
+      MYSQL_PASSWORD: mibew
+    volumes:
+      - "./database:/var/lib/mysql"

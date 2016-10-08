@@ -1,0 +1,23 @@
+# IMPORTANT: Before install mibew copy this file to config.yml and fill it with
+# your own settings!
+
+
+# MySQL Database parameters
+database:
+    host: "mysql"
+    port: 3306
+    db: "mibew"
+    login: "mibew"
+    pass: "mibew"
+    tables_prefix: "mibew_"
+    use_persistent_connection: false
+
+cache:
+    storage: file_system
+
+home_locale: en
+default_locale: en
+
+timezone: "Europe/Dublin"
+
+plugins: []
